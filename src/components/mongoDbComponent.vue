@@ -8,7 +8,7 @@ const error = ref(null)
 const loading = ref(null)
 
 onMounted(async () => {
-  await api.fetchData(error, loading, data, "category/mongoDb")
+  await api.fetchData(error, loading, data, "category/mongodb")
 })
 </script>
 

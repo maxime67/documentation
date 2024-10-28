@@ -8,7 +8,7 @@ const error = ref(null)
 const loading = ref(null)
 
 onMounted(async () => {
-  await api.fetchData(error, loading, data, "category/nodeJs")
+  await api.fetchData(error, loading, data, "category/nodejs")
 })
 </script>
 

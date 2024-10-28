@@ -46,13 +46,13 @@
         </button>
       </a>
     </RouterLink>
-    <RouterLink to="/apache">
+    <RouterLink to="/mysql">
       <a class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">
         <button
           type="button"
           class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-20 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
         >
-          SMTP
+          MySQL
         </button>
       </a>
     </RouterLink>

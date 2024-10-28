@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ApacheComponent from '@/components/ApacheComponent.vue'
 import nodeJsComponent from '@/components/nodeJsComponent.vue'
 import mongoDbComponent from '@/components/mongoDbComponent.vue'
+import MySqlComponent from '@/components/MySqlComponent.vue'
 
 
 const router = createRouter({
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/nodeJs',
       name: 'nodejs',
       component: nodeJsComponent
+    },
+    {
+      path: '/mysql',
+      name: 'mysql',
+      component: MySqlComponent
     },
     {
       path: '/mongoDb',

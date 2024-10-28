@@ -23,6 +23,11 @@ const props = defineProps<{
         <p class="font-normal text-gray-700 dark:text-gray-400">
           {{ item.description }}
         </p>
+        <div class="grid grid-cols-4">
+          <div  v-for="tag in item.tags" :key="tag.id">
+            <img class="rounded-md " :src="`../logo/${tag}.png`">
+          </div>
+        </div>
       </a>
     </div>
   </div>
