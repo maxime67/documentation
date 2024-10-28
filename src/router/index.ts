@@ -1,21 +1,31 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import ApacheComponent from '@/components/ApacheComponent.vue'
+import nodeJsComponent from '@/components/nodeJsComponent.vue'
+import mongoDbComponent from '@/components/mongoDbComponent.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
-      component: HomeView
+      component: ApacheComponent
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/apache',
+      name: 'apache',
+      component: ApacheComponent
+    },
+    {
+      path: '/nodeJs',
+      name: 'nodejs',
+      component: nodeJsComponent
+    },
+    {
+      path: '/mongoDb',
+      name: 'mongoDB',
+      component: mongoDbComponent
     }
   ]
 })
