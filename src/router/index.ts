@@ -3,6 +3,7 @@ import ApacheComponent from '@/components/ApacheComponent.vue'
 import nodeJsComponent from '@/components/nodeJsComponent.vue'
 import mongoDbComponent from '@/components/mongoDbComponent.vue'
 import MySqlComponent from '@/components/MySqlComponent.vue'
+import HomeComponent from '@/components/HomeComponent.vue'
 
 
 const router = createRouter({
@@ -11,7 +12,7 @@ const router = createRouter({
     {
       path: '/home',
       name: 'home',
-      component: ApacheComponent
+      component: HomeComponent
     },
     {
       path: '/apache',

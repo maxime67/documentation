@@ -9,4 +9,8 @@ import NavbarView from '@/views/NavbarView.vue'
   <RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+body{
+  background-color: red;
+}
+</style>
